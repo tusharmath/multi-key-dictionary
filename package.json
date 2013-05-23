@@ -1,0 +1,22 @@
+{
+  "name": "multi-key-dict",
+  "description": "A multi key dictionay",
+  "version": "0.0.0",
+  "author": {
+    "name": "Tushar Mathur <tusharmath@gmail.com>",
+    "url": "http://tusharm.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tusharmath/multi-key-dictionary.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha test/test.* -R spec"
+  },
+  "dependencies": {
+    "grunt-release": "*",
+  }
+}
