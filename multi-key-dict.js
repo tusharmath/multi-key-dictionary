@@ -46,8 +46,18 @@ var _get = function() {
 
 	return val;
 };
-var _remove = function() {};
+var _remove = function() {
+	var keys = _args_parse(arguments);
+	var val = this.items;
+	for (var i = 0; i < keys.length; i++) {
+		var key = keys[i];
+		if (i == keys.length - 1) {
+			delete val[key];
+		}
+		val = val[key];
 
+	}
+}
 mkDict.prototype.add = _add;
 mkDict.prototype.get = _get;
 mkDict.prototype.remove = _remove;
