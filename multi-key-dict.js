@@ -3,7 +3,18 @@ var mkDict = function() {
 };
 
 var _args_parse = function(args) {
-	return Array.prototype.slice.call(args);
+	var items = Array.prototype.slice.call(args);
+	var result;
+	if (items[0] instanceof Array) {
+		result = items[0];
+		if (items[1]) {
+			result.push(items[1]);
+		}
+	} else {
+		result = items;
+	}
+
+	return result;
 };
 
 var _args_dichotomizer = function(args) {

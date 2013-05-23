@@ -28,7 +28,14 @@ describe('add method', function() {
 		dict.add('a', 'b', 'c', 'd', 1);
 		should.exist(dict.items.a.b.c.d);
 	});
+
+	it('should add value using array type keys', function() {
+		var dict = new Dict();
+		dict.add(['a', 'b', 'c', 'd'], 1);
+		should.exist(dict.items.a.b.c.d);
+	});
 });
+
 
 describe('get method', function() {
 	it('should get 1 for a,b,c,d keys', function() {
@@ -42,9 +49,9 @@ describe('remove method', function() {
 	it('should get empty for a, b, c, d', function() {
 		var dict = new Dict();
 		dict.add('a', 'b', 'c', 'd', 1);
-		dict.add('a', 'b', 'cc', 'd', 1);
+		dict.add(['a', 'b', 'cc', 'd'], 1);
 		dict.remove('a', 'b', 'c', 'd');
-		
+
 		should.not.exist(dict.items.a.b.c.d);
 		should.exist(dict.items.a.b.c);
 		should.exist(dict.items.a.b.cc);
