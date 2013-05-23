@@ -36,5 +36,9 @@ npm install multi-key-dictionary
 
    ```js
    var x = dict.get('a','b','c'); // returns 34
-   dict.remove('a','b','c'); //removes the key permutation
+   dict.remove('a','b','c');
    ```	
+4. A JS object is created to maintain the dictionary, which can be accessed by the items property of the dictionary.
+   ```js
+   console.log(dict.items);//Will return the complete dictionary.
+   ```
