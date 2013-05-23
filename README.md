@@ -37,4 +37,4 @@ npm install multi-key-dictionary
    ```js
    var x = dict.get('a','b','c'); // returns 34
    dict.remove('a','b','c'); //removes the key permutation
-   ```
+   ```	
