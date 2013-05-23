@@ -1,7 +1,7 @@
 {
   "name": "multi-key-dict",
   "description": "A multi key dictionay",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": {
     "name": "Tushar Mathur <tusharmath@gmail.com>",
     "url": "http://tusharm.com"
