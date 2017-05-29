@@ -1,5 +1,7 @@
 #multi-key-dictionary
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tusharmath/multi-key-dictionary.svg)](https://greenkeeper.io/)
+
 This is a node.js lib which provides a dictionary which can have multiple keys.
 
 ##Installation
